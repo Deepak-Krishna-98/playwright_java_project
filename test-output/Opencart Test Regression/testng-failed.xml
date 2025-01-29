@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Opencart Test Regression]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.opencart.Listener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Opencart LoginpageTest(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.amazon.tests.LoginPageTest">
+        <methods>
+          <include name="homepageURLTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.amazon.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Opencart LoginpageTest(failed) -->
+</suite> <!-- Failed suite [Opencart Test Regression] -->
